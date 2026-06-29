@@ -1,0 +1,1862 @@
+INFO:     Will watch for changes in these directories: ['/Users/imseongsu/Desktop/cap_2026/aims-backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [94360] using StatReload
+INFO:     Started server process [94363]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+🚀 AIMS Backend started
+📊 Initializing database...
+✅ Database tables created successfully
+📥 Received from frontend:
+  - File: IMG_6474.MOV
+  - Process Name (수신): Test123
+  - Task Name (수신): Work456
+📹 Video saved: a356e1dd.mov (size: 48.28 MB)
+[Gemini] 모델 시도: gemini-2.0-flash-lite
+[Gemini] gemini-2.0-flash-lite 실패: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please 
+[Gemini] 모델 시도: gemini-1.5-flash
+[Gemini] gemini-1.5-flash 실패: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API vers
+[Gemini] 모델 시도: gemini-2.0-flash
+[Gemini] gemini-2.0-flash 실패: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please 
+Gemini API 오류 (descriptions 생략): Gemini API 할당량 초과: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 40.250988647s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '40s'}]}}
+[STT] Whisper 전사 시작: uploads/a356e1dd.mov
+Detected language: Korean
+  0%|          | 0/3033 [00:00<?, ?frames/s]  0%|          | 0/3033 [00:00<?, ?frames/s]
+[STT] 완료 - text: 
+✅ Saved to database: sop_a356e1dd
+   - process_name: Test123
+   - task_name: Work456
+📤 Returning to frontend:
+  - Analysis ID: a356e1dd
+  - SOP ID: sop_a356e1dd
+  - procedureName: Work456
+  - processName: Test123
+INFO:     127.0.0.1:60025 - "POST /api/analyze/video HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60505 - "GET /api/analyze/a356e1dd HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60505 - "GET /api/analyze/a356e1dd HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60508 - "GET /thumb_a356e1dd_step1.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60511 - "GET /a356e1dd.mov HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60509 - "GET /thumb_a356e1dd_step2.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60505 - "GET /api/procedures/sop_a356e1dd HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60505 - "GET /api/procedures/sop_a356e1dd HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60651 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60651 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60677 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60677 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60677 - "GET /api/procedures/sop_a356e1dd HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60677 - "GET /api/procedures/sop_a356e1dd HTTP/1.1" 200 OK
+📥 Received from frontend:
+  - File: IMG_6474.MOV
+  - Process Name (수신): RC카 전면부 조립
+  - Task Name (수신): dd
+📹 Video saved: fc5150f9.mov (size: 48.28 MB)
+[Gemini] 모델 시도: gemini-2.0-flash-lite
+[Gemini] gemini-2.0-flash-lite 실패: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please 
+[Gemini] 모델 시도: gemini-1.5-flash
+[Gemini] gemini-1.5-flash 실패: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API vers
+[Gemini] 모델 시도: gemini-2.0-flash
+[Gemini] gemini-2.0-flash 실패: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please 
+Gemini API 오류 (descriptions 생략): Gemini API 할당량 초과: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 48.484136045s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '48s'}]}}
+[STT] Whisper 전사 시작: uploads/fc5150f9.mov
+Detected language: Korean
+  0%|          | 0/3033 [00:00<?, ?frames/s]  0%|          | 0/3033 [00:00<?, ?frames/s]
+[STT] 완료 - text: 
+✅ Saved to database: sop_fc5150f9
+   - process_name: RC카 전면부 조립
+   - task_name: dd
+📤 Returning to frontend:
+  - Analysis ID: fc5150f9
+  - SOP ID: sop_fc5150f9
+  - procedureName: dd
+  - processName: RC카 전면부 조립
+INFO:     127.0.0.1:60784 - "POST /api/analyze/video HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60784 - "GET /api/analyze/fc5150f9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60784 - "GET /api/analyze/fc5150f9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61208 - "GET /thumb_fc5150f9_step1.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61209 - "GET /thumb_fc5150f9_step2.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61211 - "GET /fc5150f9.mov HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60784 - "GET /api/procedures/sop_fc5150f9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60784 - "GET /api/procedures/sop_fc5150f9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61416 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61416 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61459 - "GET /api/procedures/1 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:61459 - "GET /api/procedures/1 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:61629 - "OPTIONS /api/analyze/video HTTP/1.1" 200 OK
+📥 Received from frontend:
+  - File: IMG_6474.MOV
+  - Process Name (수신): TestA
+  - Task Name (수신): TestB
+📹 Video saved: 59bce6f7.mov (size: 48.28 MB)
+[Gemini] 모델 시도: gemini-2.0-flash-lite
+[Gemini] gemini-2.0-flash-lite 실패: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please 
+[Gemini] 모델 시도: gemini-1.5-flash
+[Gemini] gemini-1.5-flash 실패: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API vers
+[Gemini] 모델 시도: gemini-2.0-flash
+[Gemini] gemini-2.0-flash 실패: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please 
+Gemini API 오류 (descriptions 생략): Gemini API 할당량 초과: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 30.746369987s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '30s'}]}}
+[STT] Whisper 전사 시작: uploads/59bce6f7.mov
+Detected language: Korean
+  0%|          | 0/3033 [00:00<?, ?frames/s]  0%|          | 0/3033 [00:00<?, ?frames/s]
+[STT] 완료 - text: 
+✅ Saved to database: sop_59bce6f7
+   - process_name: TestA
+   - task_name: TestB
+📤 Returning to frontend:
+  - Analysis ID: 59bce6f7
+  - SOP ID: sop_59bce6f7
+  - procedureName: TestB
+  - processName: TestA
+INFO:     127.0.0.1:61629 - "POST /api/analyze/video HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62061 - "GET /api/analyze/59bce6f7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62061 - "GET /api/analyze/59bce6f7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62064 - "GET /thumb_59bce6f7_step1.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62065 - "GET /thumb_59bce6f7_step2.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62067 - "GET /59bce6f7.mov HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62067 - "GET /tool_59bce6f7_%EC%B8%A1%EC%A0%95%EA%B8%B0%EA%B8%B0.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62092 - "GET /tool_59bce6f7_%EB%A7%88%EC%9A%B0%EC%8A%A4.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62093 - "GET /tool_59bce6f7_%EB%A6%AC%EB%AA%A8%EC%BB%A8.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62090 - "GET /tool_59bce6f7_%EB%85%B8%ED%8A%B8%EB%B6%81.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62092 - "GET /thumb_59bce6f7_step1.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:62093 - "GET /thumb_59bce6f7_step2.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:62093 - "GET /tool_59bce6f7_%EC%B8%A1%EC%A0%95%EA%B8%B0%EA%B8%B0.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:62092 - "GET /tool_59bce6f7_%EB%85%B8%ED%8A%B8%EB%B6%81.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:62117 - "GET /tool_59bce6f7_%EB%A7%88%EC%9A%B0%EC%8A%A4.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:62116 - "GET /tool_59bce6f7_%EB%A6%AC%EB%AA%A8%EC%BB%A8.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:62127 - "GET /api/procedures/sop_59bce6f7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62127 - "GET /api/procedures/sop_59bce6f7 HTTP/1.1" 200 OK
+📥 Received from frontend:
+  - File: IMG_6474.MOV
+  - Process Name (수신): Test
+  - Task Name (수신): 이미지 영상
+📹 Video saved: 8d63050a.mov (size: 48.28 MB)
+[Gemini] 모델 시도: gemini-2.0-flash-lite
+[Gemini] gemini-2.0-flash-lite 실패: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please 
+[Gemini] 모델 시도: gemini-1.5-flash
+[Gemini] gemini-1.5-flash 실패: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API vers
+[Gemini] 모델 시도: gemini-2.0-flash
+[Gemini] gemini-2.0-flash 실패: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please 
+Gemini API 오류 (descriptions 생략): Gemini API 할당량 초과: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 11.148858784s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11s'}]}}
+[STT] Whisper 전사 시작: uploads/8d63050a.mov
+Detected language: Korean
+  0%|          | 0/3033 [00:00<?, ?frames/s]  0%|          | 0/3033 [00:00<?, ?frames/s]
+[STT] 완료 - text: 
+✅ Saved to database: sop_8d63050a
+   - process_name: Test
+   - task_name: 이미지 영상
+📤 Returning to frontend:
+  - Analysis ID: 8d63050a
+  - SOP ID: sop_8d63050a
+  - procedureName: 이미지 영상
+  - processName: Test
+INFO:     127.0.0.1:63465 - "POST /api/analyze/video HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63465 - "GET /api/analyze/8d63050a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63465 - "GET /api/analyze/8d63050a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63893 - "GET /thumb_8d63050a_step1.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63895 - "GET /thumb_8d63050a_step2.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63897 - "GET /8d63050a.mov HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63893 - "GET /tool_8d63050a_%EB%A6%AC%EB%AA%A8%EC%BB%A8.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63895 - "GET /tool_8d63050a_%EB%85%B8%ED%8A%B8%EB%B6%81.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63897 - "GET /tool_8d63050a_%EC%B8%A1%EC%A0%95%EA%B8%B0%EA%B8%B0.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63911 - "GET /tool_8d63050a_%EB%A7%88%EC%9A%B0%EC%8A%A4.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63921 - "GET /api/procedures/sop_8d63050a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63921 - "GET /api/procedures/sop_8d63050a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63911 - "GET /thumb_8d63050a_step1.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:63897 - "GET /tool_8d63050a_%EC%B8%A1%EC%A0%95%EA%B8%B0%EA%B8%B0.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:63893 - "GET /tool_8d63050a_%EB%85%B8%ED%8A%B8%EB%B6%81.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:63924 - "GET /tool_8d63050a_%EB%A6%AC%EB%AA%A8%EC%BB%A8.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:63895 - "GET /thumb_8d63050a_step2.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:63925 - "GET /tool_8d63050a_%EB%A7%88%EC%9A%B0%EC%8A%A4.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:63964 - "GET /8d63050a.mov HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:64007 - "OPTIONS /api/procedures/sop_8d63050a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64007 - "PUT /api/procedures/sop_8d63050a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64007 - "GET /api/procedures/sop_8d63050a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64007 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64007 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64007 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64007 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64009 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64009 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64061 - "GET /api/procedures/sop_38b3d535 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64061 - "GET /api/procedures/sop_38b3d535 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64065 - "GET /thumb_38b3d535_step2.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:64066 - "GET /thumb_38b3d535_step1.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:64069 - "GET /tool_38b3d535_%EC%B8%A1%EC%A0%95%EA%B8%B0%EA%B8%B0.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:64070 - "GET /tool_38b3d535_%EB%85%B8%ED%8A%B8%EB%B6%81.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:64071 - "GET /tool_38b3d535_%EB%A6%AC%EB%AA%A8%EC%BB%A8.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:64073 - "GET /tool_38b3d535_%EB%A7%88%EC%9A%B0%EC%8A%A4.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:64070 - "GET /38b3d535.mp4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64061 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64061 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64061 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64061 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64083 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64083 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64083 - "POST /api/procedures/sop_38b3d535/publish HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64083 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64083 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64083 - "POST /api/procedures/sop_bf697e4b/publish HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64083 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64083 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64083 - "POST /api/procedures/sop_96ce0b34/publish HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64083 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64083 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64083 - "POST /api/procedures/sop_8d63050a/publish HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64083 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64083 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64083 - "POST /api/procedures/sop_a9222b67/archive HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64083 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52085 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52103 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52105 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52105 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52105 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52105 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52105 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52103 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52103 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52110 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52110 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52110 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52110 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52114 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52114 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52114 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52114 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52114 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52114 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52110 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52110 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52110 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52110 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52114 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52114 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52114 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52114 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52114 - "GET /api/procedures/sop_8d63050a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52114 - "GET /api/procedures/sop_8d63050a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52120 - "GET /thumb_8d63050a_step1.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52121 - "GET /thumb_8d63050a_step2.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52123 - "GET /tool_8d63050a_%EC%B8%A1%EC%A0%95%EA%B8%B0%EA%B8%B0.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52125 - "GET /tool_8d63050a_%EB%85%B8%ED%8A%B8%EB%B6%81.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52127 - "GET /tool_8d63050a_%EB%A6%AC%EB%AA%A8%EC%BB%A8.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52128 - "GET /tool_8d63050a_%EB%A7%88%EC%9A%B0%EC%8A%A4.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52120 - "GET /8d63050a.mov HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52114 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52114 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52114 - "GET /api/procedures/sop_38b3d535 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52114 - "GET /api/procedures/sop_38b3d535 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52120 - "GET /thumb_38b3d535_step1.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52135 - "GET /tool_38b3d535_%EC%B8%A1%EC%A0%95%EA%B8%B0%EA%B8%B0.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52133 - "GET /thumb_38b3d535_step2.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52137 - "GET /tool_38b3d535_%EB%85%B8%ED%8A%B8%EB%B6%81.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52138 - "GET /tool_38b3d535_%EB%A6%AC%EB%AA%A8%EC%BB%A8.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52135 - "GET /38b3d535.mp4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52120 - "GET /tool_38b3d535_%EB%A7%88%EC%9A%B0%EC%8A%A4.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52114 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52114 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52114 - "GET /api/procedures/sop_bf697e4b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52114 - "GET /api/procedures/sop_bf697e4b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52137 - "GET /tool_bf697e4b_%EC%B8%A1%EC%A0%95%EA%B8%B0%EA%B8%B0.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52135 - "GET /thumb_bf697e4b_step1.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52120 - "GET /thumb_bf697e4b_step2.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52138 - "GET /tool_bf697e4b_%EB%A6%AC%EB%AA%A8%EC%BB%A8.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52133 - "GET /tool_bf697e4b_%EB%85%B8%ED%8A%B8%EB%B6%81.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52137 - "GET /tool_bf697e4b_%EB%A7%88%EC%9A%B0%EC%8A%A4.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52135 - "GET /bf697e4b.mp4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52114 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52114 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52114 - "GET /api/procedures/sop_59bce6f7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52114 - "GET /api/procedures/sop_59bce6f7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52137 - "GET /thumb_59bce6f7_step2.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52135 - "GET /thumb_59bce6f7_step1.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52133 - "GET /tool_59bce6f7_%EB%A7%88%EC%9A%B0%EC%8A%A4.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52120 - "GET /tool_59bce6f7_%EC%B8%A1%EC%A0%95%EA%B8%B0%EA%B8%B0.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52138 - "GET /tool_59bce6f7_%EB%85%B8%ED%8A%B8%EB%B6%81.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52135 - "GET /59bce6f7.mov HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52120 - "GET /tool_59bce6f7_%EB%A6%AC%EB%AA%A8%EC%BB%A8.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52140 - "OPTIONS /api/procedures/sop_59bce6f7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52140 - "DELETE /api/procedures/sop_59bce6f7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52142 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52142 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52142 - "GET /api/procedures/sop_b017d2c0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52142 - "GET /api/procedures/sop_b017d2c0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52146 - "GET /thumb_b017d2c0_step1.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52148 - "GET /thumb_b017d2c0_step2.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52152 - "GET /tool_b017d2c0_%EB%A6%AC%EB%AA%A8%EC%BB%A8.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52149 - "GET /tool_b017d2c0_%EC%B8%A1%EC%A0%95%EA%B8%B0%EA%B8%B0.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52151 - "GET /tool_b017d2c0_%EB%85%B8%ED%8A%B8%EB%B6%81.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52152 - "GET /tool_b017d2c0_%EB%A7%88%EC%9A%B0%EC%8A%A4.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52149 - "GET /b017d2c0.mov HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52142 - "OPTIONS /api/procedures/sop_b017d2c0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52142 - "DELETE /api/procedures/sop_b017d2c0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52142 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52142 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52142 - "GET /api/procedures/sop_a9222b67 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52142 - "GET /api/procedures/sop_a9222b67 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52149 - "GET /thumb_a9222b67_step1.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52152 - "GET /thumb_a9222b67_step2.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52148 - "GET /tool_a9222b67_%EC%B8%A1%EC%A0%95%EA%B8%B0%EA%B8%B0.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52146 - "GET /tool_a9222b67_%EB%A7%88%EC%9A%B0%EC%8A%A4.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52151 - "GET /tool_a9222b67_%EB%85%B8%ED%8A%B8%EB%B6%81.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52149 - "GET /a9222b67.mp4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52142 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52142 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52142 - "GET /api/procedures/sop_001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52142 - "GET /api/procedures/sop_001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52149 - "GET /thumb_001_step1.jpg HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52151 - "GET /thumb_001_step2.jpg HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52146 - "GET /thumb_001_step3.jpg HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52152 - "GET /tool_001_%EB%82%A9%EB%95%9C%EC%9D%B8.jpg HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52148 - "GET /tool_001_%EC%84%A0%EC%9E%85.jpg HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52156 - "GET /sample.mp4 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52142 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52142 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52142 - "GET /api/procedures/sop_a9222b67 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52142 - "GET /api/procedures/sop_a9222b67 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52142 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52142 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52142 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52142 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52154 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52154 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52161 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52161 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52161 - "GET /api/procedures?skip=0&limit=50&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52161 - "GET /api/procedures?skip=0&limit=50&status=archived HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52161 - "GET /api/procedures/sop_001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52161 - "GET /api/procedures/sop_001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52165 - "GET /thumb_001_step1.jpg HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52167 - "GET /thumb_001_step2.jpg HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52168 - "GET /thumb_001_step3.jpg HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52170 - "GET /tool_001_%EB%82%A9%EB%95%9C%EC%9D%B8.jpg HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52171 - "GET /tool_001_%EC%84%A0%EC%9E%85.jpg HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52173 - "GET /sample.mp4 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52161 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52161 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52161 - "GET /api/procedures/sop_feff661c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52161 - "GET /api/procedures/sop_feff661c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52177 - "GET /thumb_feff661c_step1.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52179 - "GET /thumb_feff661c_step2.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52183 - "GET /tool_feff661c_%EB%A7%88%EC%9A%B0%EC%8A%A4.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52182 - "GET /tool_feff661c_%EB%85%B8%ED%8A%B8%EB%B6%81.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52180 - "GET /tool_feff661c_%EC%B8%A1%EC%A0%95%EA%B8%B0%EA%B8%B0.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52185 - "GET /feff661c.mov HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52161 - "OPTIONS /api/procedures/sop_feff661c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52161 - "DELETE /api/procedures/sop_feff661c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52188 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52188 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52188 - "GET /api/procedures/sop_a3472e51 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52188 - "GET /api/procedures/sop_a3472e51 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52194 - "GET /thumb_a3472e51_step1.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52197 - "GET /tool_a3472e51_%EC%B8%A1%EC%A0%95%EA%B8%B0%EA%B8%B0.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52196 - "GET /thumb_a3472e51_step2.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52199 - "GET /tool_a3472e51_%EB%85%B8%ED%8A%B8%EB%B6%81.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52201 - "GET /tool_a3472e51_%EB%A6%AC%EB%AA%A8%EC%BB%A8.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52202 - "GET /tool_a3472e51_%EB%A7%88%EC%9A%B0%EC%8A%A4.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52197 - "GET /a3472e51.mov HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52188 - "OPTIONS /api/procedures/sop_a3472e51 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52188 - "DELETE /api/procedures/sop_a3472e51 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52188 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52188 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52188 - "GET /api/procedures/sop_4080121a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52188 - "GET /api/procedures/sop_4080121a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52199 - "GET /thumb_4080121a_step2.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52197 - "GET /thumb_4080121a_step1.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52201 - "GET /tool_4080121a_%EC%B8%A1%EC%A0%95%EA%B8%B0%EA%B8%B0.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52202 - "GET /tool_4080121a_%EB%A7%88%EC%9A%B0%EC%8A%A4.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52196 - "GET /tool_4080121a_%EB%85%B8%ED%8A%B8%EB%B6%81.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52197 - "GET /4080121a.mov HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52188 - "OPTIONS /api/procedures/sop_4080121a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52204 - "DELETE /api/procedures/sop_4080121a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52204 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52204 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52204 - "GET /api/procedures/sop_8d63050a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52204 - "GET /api/procedures/sop_8d63050a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52204 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52204 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52204 - "GET /api/procedures/sop_797486a7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52204 - "GET /api/procedures/sop_797486a7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52209 - "GET /thumb_797486a7_step1.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52212 - "GET /tool_797486a7_%EC%B8%A1%EC%A0%95%EA%B8%B0%EA%B8%B0.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52211 - "GET /thumb_797486a7_step2.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52214 - "GET /tool_797486a7_%EB%85%B8%ED%8A%B8%EB%B6%81.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52217 - "GET /tool_797486a7_%EB%A7%88%EC%9A%B0%EC%8A%A4.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52216 - "GET /tool_797486a7_%EB%A6%AC%EB%AA%A8%EC%BB%A8.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52209 - "GET /797486a7.mov HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52204 - "OPTIONS /api/procedures/sop_797486a7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52204 - "DELETE /api/procedures/sop_797486a7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52204 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52204 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52204 - "GET /api/procedures/sop_6b8d4610 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52204 - "GET /api/procedures/sop_6b8d4610 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52209 - "GET /thumb_6b8d4610_step1.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52214 - "GET /thumb_6b8d4610_step2.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52211 - "GET /tool_6b8d4610_%EC%B8%A1%EC%A0%95%EA%B8%B0%EA%B8%B0.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52216 - "GET /tool_6b8d4610_%EB%85%B8%ED%8A%B8%EB%B6%81.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52217 - "GET /tool_6b8d4610_%EB%A6%AC%EB%AA%A8%EC%BB%A8.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52211 - "GET /6b8d4610.mov HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52209 - "GET /tool_6b8d4610_%EB%A7%88%EC%9A%B0%EC%8A%A4.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52204 - "OPTIONS /api/procedures/sop_6b8d4610 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "DELETE /api/procedures/sop_6b8d4610 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures/sop_a356e1dd HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures/sop_a356e1dd HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52226 - "GET /tool_a356e1dd_%EC%B8%A1%EC%A0%95%EA%B8%B0%EA%B8%B0.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52223 - "GET /thumb_a356e1dd_step1.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52225 - "GET /thumb_a356e1dd_step2.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52228 - "GET /tool_a356e1dd_%EB%85%B8%ED%8A%B8%EB%B6%81.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52229 - "GET /tool_a356e1dd_%EB%A7%88%EC%9A%B0%EC%8A%A4.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52223 - "GET /a356e1dd.mov HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "OPTIONS /api/procedures/sop_a356e1dd HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52204 - "DELETE /api/procedures/sop_a356e1dd HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52204 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52204 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52204 - "GET /api/procedures/sop_fc5150f9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52204 - "GET /api/procedures/sop_fc5150f9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52226 - "GET /tool_fc5150f9_%EB%A7%88%EC%9A%B0%EC%8A%A4.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52223 - "GET /thumb_fc5150f9_step1.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52228 - "GET /tool_fc5150f9_%EB%85%B8%ED%8A%B8%EB%B6%81.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52229 - "GET /tool_fc5150f9_%EC%B8%A1%EC%A0%95%EA%B8%B0%EA%B8%B0.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52225 - "GET /thumb_fc5150f9_step2.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52228 - "GET /fc5150f9.mov HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52204 - "OPTIONS /api/procedures/sop_fc5150f9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "DELETE /api/procedures/sop_fc5150f9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures/sop_bf697e4b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures/sop_bf697e4b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures/sop_38b3d535 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures/sop_38b3d535 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures/sop_8d63050a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures/sop_8d63050a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures/sop_96ce0b34 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures/sop_96ce0b34 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52234 - "GET /thumb_96ce0b34_step1.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52237 - "GET /tool_96ce0b34_%EC%B8%A1%EC%A0%95%EA%B8%B0%EA%B8%B0.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52238 - "GET /tool_96ce0b34_%EB%85%B8%ED%8A%B8%EB%B6%81.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52236 - "GET /thumb_96ce0b34_step2.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52240 - "GET /tool_96ce0b34_%EB%A7%88%EC%9A%B0%EC%8A%A4.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52242 - "GET /96ce0b34.mp4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures/sop_a9222b67 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures/sop_a9222b67 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures/sop_8d63050a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures/sop_8d63050a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52250 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52250 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52250 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52250 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "POST /api/procedures/sop_bf697e4b/archive HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "POST /api/procedures/sop_96ce0b34/archive HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "POST /api/procedures/sop_8d63050a/archive HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52219 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52252 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52252 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52252 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52252 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52252 - "GET /api/procedures?skip=0&limit=50&status=archived HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52252 - "GET /api/procedures/sop_a9222b67 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52252 - "GET /api/procedures/sop_a9222b67 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52252 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52252 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52252 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52252 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52254 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52254 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52254 - "GET /api/procedures/1 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52254 - "GET /api/procedures/1 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52254 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52254 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52254 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52254 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52270 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52270 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52270 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52270 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52274 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52274 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52274 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52274 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52276 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52276 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52276 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52276 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52284 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52284 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52284 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52284 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52286 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52286 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52296 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52296 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52296 - "GET /api/procedures/sop_a9222b67 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52296 - "GET /api/procedures/sop_a9222b67 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52296 - "OPTIONS /api/procedures/sop_a9222b67 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52296 - "DELETE /api/procedures/sop_a9222b67 HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:52296 - "GET /api/procedures/sop_a9222b67 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52296 - "GET /api/procedures/sop_a9222b67 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52296 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52296 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52296 - "GET /api/procedures/sop_8d63050a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52296 - "GET /api/procedures/sop_8d63050a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52296 - "OPTIONS /api/procedures/sop_8d63050a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52298 - "DELETE /api/procedures/sop_8d63050a HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:52309 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52309 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'routers/procedures.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [94363]
+🛑 AIMS Backend stopped
+INFO:     Started server process [8726]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+🚀 AIMS Backend started
+📊 Initializing database...
+✅ Database tables created successfully
+INFO:     127.0.0.1:52338 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52338 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52338 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52338 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52338 - "GET /api/procedures/sop_a9222b67 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52338 - "GET /api/procedures/sop_a9222b67 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52338 - "DELETE /api/procedures/sop_a9222b67 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52338 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52338 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52338 - "GET /api/procedures/sop_38b3d535 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52338 - "GET /api/procedures/sop_38b3d535 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52338 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52338 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52338 - "GET /api/procedures/sop_bf697e4b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52338 - "GET /api/procedures/sop_bf697e4b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52338 - "OPTIONS /api/procedures/sop_bf697e4b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52338 - "DELETE /api/procedures/sop_bf697e4b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52338 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52338 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52338 - "GET /api/procedures/sop_001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52338 - "GET /api/procedures/sop_001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52356 - "GET /thumb_001_step3.jpg HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52351 - "GET /thumb_001_step1.jpg HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52355 - "GET /thumb_001_step2.jpg HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52358 - "GET /tool_001_%EB%82%A9%EB%95%9C%EC%9D%B8.jpg HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52359 - "GET /tool_001_%EC%84%A0%EC%9E%85.jpg HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52361 - "GET /sample.mp4 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52338 - "OPTIONS /api/procedures/sop_001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52349 - "DELETE /api/procedures/sop_001 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: NOT NULL constraint failed: worker_feedbacks.sop_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/uvicorn/protocols/http/h11_impl.py", line 408, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/applications.py", line 1106, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/cors.py", line 146, in simple_response
+    await self.app(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/imseongsu/Desktop/cap_2026/aims-backend/routers/procedures.py", line 261, in delete_procedure
+    db.commit()
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4345, in flush
+    self._flush(objects)
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4480, in _flush
+    with util.safe_reraise():
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4441, in _flush
+    flush_context.execute()
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py", line 85, in save_obj
+    _emit_update_statements(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+        ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1415, in execute
+    return meth(
+           ^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1637, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: worker_feedbacks.sop_id
+[SQL: UPDATE worker_feedbacks SET sop_id=? WHERE worker_feedbacks.id = ?]
+[parameters: (None, 'fb_001')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+INFO:     127.0.0.1:52338 - "DELETE /api/procedures/sop_001 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: NOT NULL constraint failed: worker_feedbacks.sop_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/uvicorn/protocols/http/h11_impl.py", line 408, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/applications.py", line 1106, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/cors.py", line 146, in simple_response
+    await self.app(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/imseongsu/Desktop/cap_2026/aims-backend/routers/procedures.py", line 261, in delete_procedure
+    db.commit()
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4345, in flush
+    self._flush(objects)
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4480, in _flush
+    with util.safe_reraise():
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4441, in _flush
+    flush_context.execute()
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py", line 85, in save_obj
+    _emit_update_statements(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+        ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1415, in execute
+    return meth(
+           ^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1637, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: worker_feedbacks.sop_id
+[SQL: UPDATE worker_feedbacks SET sop_id=? WHERE worker_feedbacks.id = ?]
+[parameters: (None, 'fb_001')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+INFO:     127.0.0.1:52363 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52363 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52365 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52365 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52365 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52365 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52369 - "GET /api/procedures/sop_001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52369 - "GET /api/procedures/sop_001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52373 - "GET /thumb_001_step1.jpg HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52375 - "GET /thumb_001_step2.jpg HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52378 - "GET /tool_001_%EB%82%A9%EB%95%9C%EC%9D%B8.jpg HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52376 - "GET /thumb_001_step3.jpg HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52381 - "GET /sample.mp4 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52379 - "GET /tool_001_%EC%84%A0%EC%9E%85.jpg HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52369 - "DELETE /api/procedures/sop_001 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: NOT NULL constraint failed: worker_feedbacks.sop_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/uvicorn/protocols/http/h11_impl.py", line 408, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/applications.py", line 1106, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/cors.py", line 146, in simple_response
+    await self.app(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/imseongsu/Desktop/cap_2026/aims-backend/routers/procedures.py", line 261, in delete_procedure
+    db.commit()
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4345, in flush
+    self._flush(objects)
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4480, in _flush
+    with util.safe_reraise():
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4441, in _flush
+    flush_context.execute()
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py", line 85, in save_obj
+    _emit_update_statements(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+        ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1415, in execute
+    return meth(
+           ^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1637, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: worker_feedbacks.sop_id
+[SQL: UPDATE worker_feedbacks SET sop_id=? WHERE worker_feedbacks.id = ?]
+[parameters: (None, 'fb_001')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+INFO:     127.0.0.1:52386 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52386 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52432 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52432 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52432 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52432 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52434 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52434 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52442 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52459 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52459 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52462 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52462 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52464 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52464 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52464 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52464 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52466 - "GET /api/worker/user_001/procedures HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52466 - "GET /api/worker/user_001/procedures HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52466 - "GET /api/worker/user_001/history?skip=0&limit=100 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52466 - "GET /api/worker/user_001/history?skip=0&limit=100 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52466 - "GET /api/worker/user_001/procedures HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52466 - "GET /api/worker/user_001/procedures HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52473 - "GET /api/worker/user_001/procedures HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52473 - "GET /api/worker/user_001/procedures HTTP/1.1" 404 Not Found
+WARNING:  StatReload detected changes in 'database.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [8726]
+🛑 AIMS Backend stopped
+INFO:     Started server process [8861]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+🚀 AIMS Backend started
+📊 Initializing database...
+✅ Database tables created successfully
+✅ Test worker user created: user_001
+INFO:     127.0.0.1:52499 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52499 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52499 - "GET /api/worker/user_001/history?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52499 - "GET /api/worker/user_001/history?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52499 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52499 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52506 - "GET /api/worker/user_001/history?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52506 - "GET /api/worker/user_001/history?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52506 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52506 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52506 - "GET /api/worker/user_001/history?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52506 - "GET /api/worker/user_001/history?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52506 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52506 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52525 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52525 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52525 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52525 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52525 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52531 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52531 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52531 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52531 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52531 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52531 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52533 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52533 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52533 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52533 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52535 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52535 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52538 - "OPTIONS /api/analyze/video HTTP/1.1" 200 OK
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+📥 Received from frontend:
+  - File: IMG_6474.MOV
+  - Process Name (수신): Test
+  - Task Name (수신): TESTEST
+📹 Video saved: 2312ab7a.mov (size: 48.28 MB)
+[Gemini] 모델 시도: gemini-2.0-flash-lite
+INFO:     127.0.0.1:52549 - "GET /api/procedures HTTP/1.1" 200 OK
+[Gemini] gemini-2.0-flash-lite 실패: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please 
+[Gemini] 모델 시도: gemini-1.5-flash
+[Gemini] gemini-1.5-flash 실패: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API vers
+[Gemini] 모델 시도: gemini-2.0-flash
+[Gemini] gemini-2.0-flash 실패: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please 
+Gemini API 오류 (descriptions 생략): Gemini 모델을 찾을 수 없습니다: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 31.846734042s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '31s'}]}}
+[STT] Whisper 전사 시작: uploads/2312ab7a.mov
+Detected language: Korean
+  0%|          | 0/3033 [00:00<?, ?frames/s]  0%|          | 0/3033 [00:00<?, ?frames/s]
+[STT] 완료 - text: 
+✅ Saved to database: sop_2312ab7a
+   - process_name: Test
+   - task_name: TESTEST
+📤 Returning to frontend:
+  - Analysis ID: 2312ab7a
+  - SOP ID: sop_2312ab7a
+  - procedureName: TESTEST
+  - processName: Test
+INFO:     127.0.0.1:52538 - "POST /api/analyze/video HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52560 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52563 - "GET /api/analyze/2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52563 - "GET /api/analyze/2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52566 - "GET /thumb_2312ab7a_step1.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52569 - "GET /2312ab7a.mov HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52567 - "GET /thumb_2312ab7a_step2.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52569 - "GET /tool_2312ab7a_%EC%B8%A1%EC%A0%95%EA%B8%B0%EA%B8%B0.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52566 - "GET /tool_2312ab7a_%EB%A6%AC%EB%AA%A8%EC%BB%A8.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52567 - "GET /tool_2312ab7a_%EB%85%B8%ED%8A%B8%EB%B6%81.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52571 - "GET /tool_2312ab7a_%EB%A7%88%EC%9A%B0%EC%8A%A4.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52563 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52563 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52563 - "POST /api/procedures/sop_2312ab7a/publish HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52563 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52563 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52563 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52563 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52573 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52573 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52575 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52575 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52579 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52579 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52579 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52579 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52590 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52590 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52592 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52592 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52608 - "GET /thumb_2312ab7a_step1.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52608 - "GET /tool_2312ab7a_%EB%85%B8%ED%8A%B8%EB%B6%81.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52612 - "GET /tool_2312ab7a_%EC%B8%A1%EC%A0%95%EA%B8%B0%EA%B8%B0.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52611 - "GET /tool_2312ab7a_%EB%A6%AC%EB%AA%A8%EC%BB%A8.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52611 - "GET /tool_2312ab7a_%EB%A7%88%EC%9A%B0%EC%8A%A4.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52625 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52625 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52627 - "GET /thumb_2312ab7a_step1.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52631 - "GET /tool_2312ab7a_%EC%B8%A1%EC%A0%95%EA%B8%B0%EA%B8%B0.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52632 - "GET /tool_2312ab7a_%EB%85%B8%ED%8A%B8%EB%B6%81.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52635 - "GET /tool_2312ab7a_%EB%A7%88%EC%9A%B0%EC%8A%A4.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52634 - "GET /tool_2312ab7a_%EB%A6%AC%EB%AA%A8%EC%BB%A8.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52637 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52637 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52641 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52641 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52646 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52646 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52651 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52651 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52651 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52651 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52669 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52669 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52669 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52669 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52675 - "GET /thumb_2312ab7a_step1.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52676 - "GET /tool_2312ab7a_%EC%B8%A1%EC%A0%95%EA%B8%B0%EA%B8%B0.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52677 - "GET /tool_2312ab7a_%EB%85%B8%ED%8A%B8%EB%B6%81.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52678 - "GET /tool_2312ab7a_%EB%A6%AC%EB%AA%A8%EC%BB%A8.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52679 - "GET /tool_2312ab7a_%EB%A7%88%EC%9A%B0%EC%8A%A4.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52669 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52669 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52678 - "GET /2312ab7a.mov HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52679 - "GET /thumb_2312ab7a_step2.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52685 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52685 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52685 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52685 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52697 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52697 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52697 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52697 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52699 - "GET /thumb_2312ab7a_step1.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52704 - "GET /tool_2312ab7a_%EB%85%B8%ED%8A%B8%EB%B6%81.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52705 - "GET /tool_2312ab7a_%EC%B8%A1%EC%A0%95%EA%B8%B0%EA%B8%B0.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52706 - "GET /tool_2312ab7a_%EB%A6%AC%EB%AA%A8%EC%BB%A8.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52707 - "GET /tool_2312ab7a_%EB%A7%88%EC%9A%B0%EC%8A%A4.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52697 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52697 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52707 - "GET /thumb_2312ab7a_step2.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52707 - "GET /2312ab7a.mov HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52714 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52716 - "GET /2312ab7a.mov HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52721 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52737 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52737 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52742 - "GET /thumb_2312ab7a_step2.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52741 - "GET /thumb_2312ab7a_step1.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52743 - "GET /tool_2312ab7a_%EC%B8%A1%EC%A0%95%EA%B8%B0%EA%B8%B0.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52747 - "GET /tool_2312ab7a_%EB%85%B8%ED%8A%B8%EB%B6%81.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52748 - "GET /tool_2312ab7a_%EB%A6%AC%EB%AA%A8%EC%BB%A8.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52749 - "GET /tool_2312ab7a_%EB%A7%88%EC%9A%B0%EC%8A%A4.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52802 - "GET /2312ab7a.mov HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52872 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52872 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52877 - "GET /thumb_2312ab7a_step1.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52878 - "GET /thumb_2312ab7a_step2.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52879 - "GET /tool_2312ab7a_%EC%B8%A1%EC%A0%95%EA%B8%B0%EA%B8%B0.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52880 - "GET /tool_2312ab7a_%EB%85%B8%ED%8A%B8%EB%B6%81.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52882 - "GET /tool_2312ab7a_%EB%A6%AC%EB%AA%A8%EC%BB%A8.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52884 - "GET /tool_2312ab7a_%EB%A7%88%EC%9A%B0%EC%8A%A4.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52884 - "GET /2312ab7a.mov HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52913 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52913 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52915 - "GET /tool_2312ab7a_%EB%A7%88%EC%9A%B0%EC%8A%A4.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52922 - "GET /thumb_2312ab7a_step2.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52921 - "GET /thumb_2312ab7a_step1.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52923 - "GET /tool_2312ab7a_%EC%B8%A1%EC%A0%95%EA%B8%B0%EA%B8%B0.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52925 - "GET /tool_2312ab7a_%EB%A6%AC%EB%AA%A8%EC%BB%A8.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52924 - "GET /tool_2312ab7a_%EB%85%B8%ED%8A%B8%EB%B6%81.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52922 - "GET /2312ab7a.mov HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52928 - "OPTIONS /api/worker/user_001/performance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52928 - "POST /api/worker/user_001/performance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52928 - "GET /api/worker/user_001/history?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52928 - "GET /api/worker/user_001/history?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55874 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55874 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55966 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55966 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55968 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55968 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55979 - "GET /tool_2312ab7a_%EC%B8%A1%EC%A0%95%EA%B8%B0%EA%B8%B0.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55978 - "GET /thumb_2312ab7a_step1.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55980 - "GET /tool_2312ab7a_%EB%85%B8%ED%8A%B8%EB%B6%81.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55981 - "GET /tool_2312ab7a_%EB%A6%AC%EB%AA%A8%EC%BB%A8.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55983 - "GET /tool_2312ab7a_%EB%A7%88%EC%9A%B0%EC%8A%A4.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55982 - "GET /thumb_2312ab7a_step2.jpg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55981 - "GET /2312ab7a.mov HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55971 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55971 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55986 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55971 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55988 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55988 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56012 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56012 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56012 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56014 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56014 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56012 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56016 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56016 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56018 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56016 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56016 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56018 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56016 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56018 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56018 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56016 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56016 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56018 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56020 - "GET /2312ab7a.mov HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56022 - "GET /2312ab7a.mov HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56018 - "OPTIONS /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56018 - "DELETE /api/procedures/sop_2312ab7a HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: NOT NULL constraint failed: worker_performances.sop_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/uvicorn/protocols/http/h11_impl.py", line 408, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/applications.py", line 1106, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/cors.py", line 146, in simple_response
+    await self.app(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/imseongsu/Desktop/cap_2026/aims-backend/routers/procedures.py", line 261, in delete_procedure
+    db.commit()
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4345, in flush
+    self._flush(objects)
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4480, in _flush
+    with util.safe_reraise():
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4441, in _flush
+    flush_context.execute()
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py", line 85, in save_obj
+    _emit_update_statements(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+        ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1415, in execute
+    return meth(
+           ^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1637, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: worker_performances.sop_id
+[SQL: UPDATE worker_performances SET sop_id=? WHERE worker_performances.id = ?]
+[parameters: (None, 'perf_user_001_sop_2312ab7a_1778388934.623389')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+INFO:     127.0.0.1:56024 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56024 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56024 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56026 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56026 - "DELETE /api/procedures/sop_2312ab7a HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: NOT NULL constraint failed: worker_performances.sop_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/uvicorn/protocols/http/h11_impl.py", line 408, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/applications.py", line 1106, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/cors.py", line 146, in simple_response
+    await self.app(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/imseongsu/Desktop/cap_2026/aims-backend/routers/procedures.py", line 261, in delete_procedure
+    db.commit()
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4345, in flush
+    self._flush(objects)
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4480, in _flush
+    with util.safe_reraise():
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4441, in _flush
+    flush_context.execute()
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py", line 85, in save_obj
+    _emit_update_statements(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+        ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1415, in execute
+    return meth(
+           ^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1637, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: worker_performances.sop_id
+[SQL: UPDATE worker_performances SET sop_id=? WHERE worker_performances.id = ?]
+[parameters: (None, 'perf_user_001_sop_2312ab7a_1778388934.623389')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+INFO:     127.0.0.1:56028 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56028 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56030 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56028 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56028 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56030 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56030 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56028 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56030 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56028 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56028 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56030 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56030 - "DELETE /api/procedures/sop_2312ab7a HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: NOT NULL constraint failed: worker_performances.sop_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/uvicorn/protocols/http/h11_impl.py", line 408, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/applications.py", line 1106, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/cors.py", line 146, in simple_response
+    await self.app(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/imseongsu/Desktop/cap_2026/aims-backend/routers/procedures.py", line 261, in delete_procedure
+    db.commit()
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4345, in flush
+    self._flush(objects)
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4480, in _flush
+    with util.safe_reraise():
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4441, in _flush
+    flush_context.execute()
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py", line 85, in save_obj
+    _emit_update_statements(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+        ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1415, in execute
+    return meth(
+           ^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1637, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: worker_performances.sop_id
+[SQL: UPDATE worker_performances SET sop_id=? WHERE worker_performances.id = ?]
+[parameters: (None, 'perf_user_001_sop_2312ab7a_1778388934.623389')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+INFO:     127.0.0.1:56052 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56052 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56052 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56054 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56054 - "DELETE /api/procedures/sop_2312ab7a HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: NOT NULL constraint failed: worker_performances.sop_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/uvicorn/protocols/http/h11_impl.py", line 408, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/applications.py", line 1106, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/cors.py", line 146, in simple_response
+    await self.app(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/imseongsu/Desktop/cap_2026/aims-backend/routers/procedures.py", line 261, in delete_procedure
+    db.commit()
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4345, in flush
+    self._flush(objects)
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4480, in _flush
+    with util.safe_reraise():
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4441, in _flush
+    flush_context.execute()
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py", line 85, in save_obj
+    _emit_update_statements(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+        ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1415, in execute
+    return meth(
+           ^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1637, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: worker_performances.sop_id
+[SQL: UPDATE worker_performances SET sop_id=? WHERE worker_performances.id = ?]
+[parameters: (None, 'perf_user_001_sop_2312ab7a_1778388934.623389')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+INFO:     127.0.0.1:56060 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56060 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56060 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56062 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56062 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56060 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56060 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56062 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56060 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56062 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56062 - "POST /api/procedures/sop_2312ab7a/archive HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56062 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56062 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56060 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56060 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56062 - "GET /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56062 - "DELETE /api/procedures/sop_2312ab7a HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: NOT NULL constraint failed: worker_performances.sop_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/uvicorn/protocols/http/h11_impl.py", line 408, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/applications.py", line 1106, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/cors.py", line 146, in simple_response
+    await self.app(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/opt/anaconda3/lib/python3.11/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/imseongsu/Desktop/cap_2026/aims-backend/routers/procedures.py", line 261, in delete_procedure
+    db.commit()
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4345, in flush
+    self._flush(objects)
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4480, in _flush
+    with util.safe_reraise():
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4441, in _flush
+    flush_context.execute()
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py", line 85, in save_obj
+    _emit_update_statements(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+        ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1415, in execute
+    return meth(
+           ^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1637, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+  File "/opt/anaconda3/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: worker_performances.sop_id
+[SQL: UPDATE worker_performances SET sop_id=? WHERE worker_performances.id = ?]
+[parameters: (None, 'perf_user_001_sop_2312ab7a_1778388934.623389')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+WARNING:  StatReload detected changes in 'models/sop.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [8861]
+🛑 AIMS Backend stopped
+INFO:     Started server process [15588]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+🚀 AIMS Backend started
+📊 Initializing database...
+✅ Database tables created successfully
+ℹ️ Test worker user already exists
+INFO:     127.0.0.1:56067 - "DELETE /api/procedures/sop_2312ab7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56067 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56067 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56067 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56069 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56075 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56075 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56075 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56075 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56075 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56144 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56144 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56146 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56144 - "GET /api/procedures?skip=0&limit=100&status=published HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56230 - "GET /docs HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56247 - "GET /docs HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56247 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56253 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56253 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56253 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56254 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56254 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56254 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56254 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56257 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56257 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56258 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56258 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56258 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56259 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56259 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56259 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56259 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56260 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56260 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56260 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56260 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56260 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56260 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56260 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56262 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56262 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56262 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56263 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56263 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56263 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56264 - "GET /api/worker/user_001/history?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56264 - "GET /api/worker/user_001/history?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56264 - "GET /api/worker/user_001/history?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56264 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56265 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56265 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56268 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56268 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56268 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56269 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56269 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56269 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56270 - "GET /api/worker/user_001/history?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56270 - "GET /api/worker/user_001/history?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56270 - "GET /api/worker/user_001/history?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56271 - "GET /api/worker/user_001/history?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56271 - "GET /api/worker/user_001/history?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56271 - "GET /api/worker/user_001/history?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56271 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56272 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56272 - "GET /api/worker/user_001/procedures HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56278 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56278 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56278 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56279 - "OPTIONS /api/analyze/video HTTP/1.1" 400 Bad Request
+INFO:     172.30.1.95:56279 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56279 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56279 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56280 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56280 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56280 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56280 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56281 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56281 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56288 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56288 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56288 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56288 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56289 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56289 - "GET /api/procedures?skip=0&limit=100&status=draft HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56289 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56288 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56288 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56290 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56290 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56291 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56291 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56290 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56290 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56297 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56297 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56297 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56297 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56298 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56298 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56303 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56303 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56303 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56304 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56304 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+INFO:     172.30.1.95:56304 - "GET /api/procedures?skip=0&limit=50 HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15588]
+🛑 AIMS Backend stopped
+INFO:     Stopping reloader process [94360]
