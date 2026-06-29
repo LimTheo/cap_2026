@@ -1,0 +1,23 @@
+# 업로드된 영상/이미지 파일 (용량 큰 파일)
+aims-backend/uploads/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.db
+*.sqlite3
+
+# Node
+node_modules/
+aims/dist/
+
+# 환경변수
+.env
+*.env.local
+
+# 기타
+.DS_Store
+*.log
