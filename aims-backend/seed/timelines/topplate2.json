@@ -1,0 +1,30 @@
+{
+  "sop_suffix": "topplate2",
+  "process_name": "스마트 RC카 조립",
+  "task_name": "상판 결합 (2차)",
+  "video": "seed/videos/topplate2.mp4",
+  "parts": [
+    { "id": "P1", "name": "조립된 하판 (모터·바퀴)", "icon": "🔲" },
+    { "id": "P2", "name": "아크릴 상판", "icon": "🔳" },
+    { "id": "P3", "name": "T자형 나사", "icon": "🔩" }
+  ],
+  "tools": [
+    { "id": "T1", "name": "손", "icon": "✋" }
+  ],
+  "segments": [
+    {
+      "step_number": 1, "name": "상판 올리기", "start": 0, "end": 7,
+      "description": "모터와 바퀴가 장착된 하판 위에 빈 아크릴 상판을 올려 나사 구멍 위치를 맞춘다.",
+      "cautions": ["상·하판 구멍 위치 정렬 확인", "모터 배선 눌림 주의"],
+      "hazards": [], "parts": ["P1", "P2"], "tools": ["T1"],
+      "evidence": "빈 아크릴 상판을 조립된 하판 위에 올려 정렬하는 장면"
+    },
+    {
+      "step_number": 2, "name": "T자형 나사 삽입 (왼쪽 위)", "start": 8, "end": 15,
+      "description": "아크릴판 왼쪽 위 구멍에 T자형 나사를 수직으로 끼운다.",
+      "cautions": ["구멍에 수직으로 삽입", "나사가 기울지 않게"],
+      "hazards": [], "parts": ["P3"], "tools": ["T1"],
+      "evidence": "T자형 나사를 상판 왼쪽 위 구멍에 삽입하는 장면"
+    }
+  ]
+}
