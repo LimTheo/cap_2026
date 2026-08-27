@@ -60,6 +60,7 @@ def main():
     ap.add_argument("--process-name", default="조립 공정")
     ap.add_argument("--task-name", default="작업")
     ap.add_argument("--frames", type=int, default=20)
+    ap.add_argument("--analysis-id", default=None, help="분석 ID 지정(미지정 시 자동생성)")
     ap.add_argument("--publish", action="store_true", help="게시 상태로 저장 (근로자 UI 노출)")
     args = ap.parse_args()
 
@@ -73,13 +74,15 @@ def main():
         f"- {n['id']}: {n['name']} — {n['description']}" for n in graph["nodes"]
     )
 
-    analysis_id = str(uuid.uuid4())[:8]
+    analysis_id = args.analysis_id or str(uuid.uuid4())[:8]
     print(f"[i] analysis_id = {analysis_id}")
 
-    # 1) 영상 uploads로 복사 (UI 재생용)
+    # 1) 영상 uploads로 복사 (UI 재생용). 이미 uploads에 있으면 건너뜀
     ext = os.path.splitext(args.video)[1].lower() or ".mp4"
     video_name = f"{analysis_id}{ext}"
-    shutil.copy(args.video, os.path.join(UPLOADS, video_name))
+    dst = os.path.join(UPLOADS, video_name)
+    if os.path.abspath(args.video) != os.path.abspath(dst):
+        shutil.copy(args.video, dst)
     video_url = f"/uploads/{video_name}"
 
     # 2) 프레임 추출
@@ -205,7 +208,7 @@ def main():
         ))
         db.commit()
         print(f"\n[✓] DB 저장 완료: {sop_id} ({'게시됨' if args.publish else '임시저장'})")
-        print(f"    단계 {len(observed)}개, 공구 {len(tool_steps)}종")
+        print(f"    단계 {len(observed)}개, 부품·공구 {len(item_steps)}종")
         for node, t_start, _ in observed:
             print(f"    [{node['order']}] {node['name']}  ({mmss(t_start)}~)")
     except Exception as e:

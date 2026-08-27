@@ -41,6 +41,7 @@ export default function UploadPage() {
   const [selectedFile, setSelectedFile] = useState(null);
   const [error, setError] = useState('');
   const [analysisId, setAnalysisId] = useState(null);
+  const [sopId, setSopId] = useState(null);
 
   // Camera recording states
   const [inputMode, setInputMode] = useState('upload'); // 'upload' | 'camera'
@@ -242,6 +243,7 @@ export default function UploadPage() {
         try {
           const result = JSON.parse(xhr.responseText);
           setAnalysisId(result.id);
+          setSopId(result.sopId);
           setUploadState('validating');
           // Transition to complete after a brief moment
           setTimeout(() => setUploadState('complete'), 1000);
@@ -630,7 +632,7 @@ export default function UploadPage() {
 
             <div className="flex gap-3">
               <button
-                onClick={() => navigate(`/manager/analysis/${analysisId}`)}
+                onClick={() => navigate(sopId ? `/manager/procedures/${sopId}` : `/manager/analysis/${analysisId}`)}
                 className="flex-1 py-3 bg-accent hover:bg-accent-hover text-white rounded-xl font-medium transition-colors"
               >
                 {t('manager.upload.viewResult')}
