@@ -1,0 +1,72 @@
+{
+  "sop_suffix": "wheel2",
+  "process_name": "스마트 RC카 조립",
+  "task_name": "바퀴 결합 (2차)",
+  "video": "seed/videos/wheel2.mp4",
+  "parts": [
+    { "id": "P1", "name": "아크릴 판", "icon": "🔲" },
+    { "id": "P2", "name": "노란색 기어모터", "icon": "⚙️" },
+    { "id": "P3", "name": "바퀴", "icon": "⚫" }
+  ],
+  "tools": [
+    { "id": "T1", "name": "손 (압입)", "icon": "✋" }
+  ],
+  "segments": [
+    {
+      "step_number": 1, "name": "1번 바퀴 결합 (오른쪽 아래)", "start": 0, "end": 13,
+      "description": "모터 4개가 장착된 아크릴 판의 오른쪽 아래 모터 축에 첫 번째 바퀴를 수직으로 눌러 끼운다.",
+      "cautions": ["축에 수직으로 압입", "끝까지 밀어 넣어 헐거움 방지"],
+      "hazards": ["압입 시 손가락 끼임 주의"], "parts": ["P1", "P2", "P3"], "tools": ["T1"],
+      "evidence": "아크릴 판 오른쪽 아래 모터 축에 첫 번째 바퀴를 끼우는 장면"
+    },
+    {
+      "step_number": 2, "name": "남은 바퀴 정리", "start": 14, "end": 15,
+      "description": "오른쪽 위에 있던 남은 바퀴 3개를 작업하기 쉽게 아래로 옮긴다.",
+      "cautions": ["바퀴 분실 주의"],
+      "hazards": [], "parts": ["P3"], "tools": [],
+      "evidence": "남은 바퀴 3개를 작업 위치로 옮기는 장면"
+    },
+    {
+      "step_number": 3, "name": "2번 바퀴 결합 (오른쪽 위)", "start": 16, "end": 24,
+      "description": "오른쪽 위 모터 축에 두 번째 바퀴를 수직으로 눌러 끼운다.",
+      "cautions": ["축에 수직으로 압입", "끝까지 밀어 넣어 헐거움 방지"],
+      "hazards": ["압입 시 손가락 끼임 주의"], "parts": ["P2", "P3"], "tools": ["T1"],
+      "evidence": "오른쪽 위 모터 축에 두 번째 바퀴를 끼우는 장면"
+    },
+    {
+      "step_number": 4, "name": "2번 바퀴 위치 재확인", "start": 25, "end": 27,
+      "description": "장착한 두 번째 바퀴를 뽑아 올바른 축인지 위치를 다시 확인한다.",
+      "cautions": ["올바른 장착 위치인지 확인"],
+      "hazards": [], "parts": ["P3"], "tools": ["T1"],
+      "evidence": "장착한 바퀴를 뽑아 위치를 재확인하는 장면"
+    },
+    {
+      "step_number": 5, "name": "2번 바퀴 재장착", "start": 28, "end": 43,
+      "description": "정확한 자리를 확인한 뒤 두 번째 바퀴를 다시 축에 끼운다.",
+      "cautions": ["축에 수직으로 압입", "끝까지 밀어 넣어 헐거움 방지"],
+      "hazards": ["압입 시 손가락 끼임 주의"], "parts": ["P2", "P3"], "tools": ["T1"],
+      "evidence": "자리를 확인한 뒤 두 번째 바퀴를 다시 끼우는 장면"
+    },
+    {
+      "step_number": 6, "name": "판 뒤집기 후 3번 바퀴 결합", "start": 44, "end": 60,
+      "description": "아크릴 판을 뒤집은 뒤 오른쪽 아래 모터 축에 세 번째 바퀴를 끼운다.",
+      "cautions": ["뒤집을 때 이미 끼운 바퀴 눌림 주의", "축에 수직으로 압입"],
+      "hazards": ["압입 시 손가락 끼임 주의"], "parts": ["P1", "P2", "P3"], "tools": ["T1"],
+      "evidence": "아크릴 판을 뒤집은 뒤 세 번째 바퀴를 끼우는 장면"
+    },
+    {
+      "step_number": 7, "name": "4번 바퀴 결합 (오른쪽 위)", "start": 61, "end": 72,
+      "description": "오른쪽 위 모터 축에 네 번째 바퀴를 수직으로 눌러 끼운다.",
+      "cautions": ["축에 수직으로 압입", "끝까지 밀어 넣어 헐거움 방지"],
+      "hazards": ["압입 시 손가락 끼임 주의"], "parts": ["P2", "P3"], "tools": ["T1"],
+      "evidence": "오른쪽 위 모터 축에 마지막 바퀴를 끼우는 장면"
+    },
+    {
+      "step_number": 8, "name": "제품 완성 확인", "start": 73, "end": 76,
+      "description": "아크릴 판을 내려놓고 완성된 차체의 바퀴 4개 고정과 좌우 정렬을 확인한다.",
+      "cautions": ["바퀴 4개 고정 확인", "좌우 정렬 확인"],
+      "hazards": [], "parts": ["P1", "P2", "P3"], "tools": [],
+      "evidence": "완성된 4륜 차체를 내려놓고 상태를 확인하는 장면"
+    }
+  ]
+}
