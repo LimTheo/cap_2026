@@ -23,53 +23,8 @@ export default function NotificationDropdown({ unreadCount }) {
   const navigate = useNavigate();
 
   useEffect(() => {
-    setNotifications([
-      {
-        id: 1,
-        type: 'published',
-        title: '절차서 게시됨',
-        message: '작업명: "부품 조립" 절차서가 게시되었습니다.',
-        time: '2분 전',
-        read: false,
-        sopId: 'sop_1',
-      },
-      {
-        id: 2,
-        type: 'review',
-        title: '검수 필요',
-        message: '"부품 검사" 절차서가 검수 대기 중입니다.',
-        time: '15분 전',
-        read: false,
-        sopId: 'sop_2',
-      },
-      {
-        id: 3,
-        type: 'upload',
-        title: '영상 업로드 완료',
-        message: '새로운 영상이 분석되었습니다.',
-        time: '1시간 전',
-        read: false,
-        sopId: 'sop_3',
-      },
-      {
-        id: 4,
-        type: 'published',
-        title: '절차서 게시됨',
-        message: '작업명: "패킹" 절차서가 게시되었습니다.',
-        time: '3시간 전',
-        read: true,
-        sopId: 'sop_4',
-      },
-      {
-        id: 5,
-        type: 'review',
-        title: '검수 완료',
-        message: '"포장" 절차서 검수가 완료되었습니다.',
-        time: '어제',
-        read: true,
-        sopId: 'sop_5',
-      },
-    ]);
+    // 실제 알림 연동 전까지 빈 상태 (가짜 알림 제거)
+    setNotifications([]);
   }, []);
 
   useEffect(() => {

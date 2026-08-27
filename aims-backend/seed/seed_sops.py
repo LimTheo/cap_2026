@@ -64,8 +64,8 @@ def seed_one(db, tl):
 
     db.add(SOP(
         id=sop_id, process_name=tl["process_name"], task_name=tl["task_name"],
-        status=SOPStatus.PUBLISHED, duration=mmss(duration), confidence=92,
-        video_url=video_url, published_at=datetime.datetime.utcnow(),
+        status=SOPStatus.DRAFT, duration=mmss(duration), confidence=92,
+        video_url=video_url, published_at=None,
     ))
     db.flush()
 
@@ -128,7 +128,7 @@ def main():
             sop_id, n = seed_one(db, tl)
             print(f"[✓] {sop_id} : {tl['task_name']} ({n}단계)")
         db.commit()
-        print(f"\n시드 완료: {len(timelines)}개 SOP 게시됨")
+        print(f"\n시드 완료: {len(timelines)}개 SOP (초안 상태 — 관리자 검수 후 게시)")
     except Exception as e:
         db.rollback()
         print(f"[!] 실패: {e}")
