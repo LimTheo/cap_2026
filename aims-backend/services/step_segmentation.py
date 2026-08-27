@@ -96,6 +96,26 @@ def segment_steps_from_video(video_path: str, analysis_id: str = None) -> dict:
     total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
     duration_sec = total_frames / fps
 
+    # MediaPipe 미탑재/비활성 → 균등 분할 폴백 (손 감지 생략)
+    if mp_hands is None:
+        cap.release()
+        n_steps = max(MIN_STEPS, min(MAX_STEPS, int(duration_sec / 10) or MIN_STEPS))
+        fallback = _make_fallback_steps(duration_sec, n_steps)
+        if analysis_id:
+            step_len = duration_sec / n_steps
+            for i, step in enumerate(fallback):
+                step["thumbnailUrl"] = _create_thumbnail(video_path, i * step_len, i + 1, analysis_id)
+        return {
+            "steps": fallback,
+            "stepBoundaries": _steps_to_boundaries(fallback, duration_sec),
+            "debugInfo": {
+                "palmBoundaryCount": 0,
+                "handDetectionRate": 0.0,
+                "totalFramesSampled": 0,
+                "detectionMethod": "even_split",
+            },
+        }
+
     hand_detected_count = 0
     total_sampled_frames = 0
 
@@ -285,24 +305,25 @@ def _create_thumbnail(video_path: str, target_time_sec: float, step_number: int,
         if not ret:
             return None
 
-        # 손 랜드마크 오버레이
-        with mp_hands.Hands(
-            static_image_mode=True,
-            max_num_hands=2,
-            min_detection_confidence=0.5,
-        ) as hands:
-            rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-            result = hands.process(rgb)
+        # 손 랜드마크 오버레이 (MediaPipe 사용 가능할 때만)
+        if mp_hands is not None:
+            with mp_hands.Hands(
+                static_image_mode=True,
+                max_num_hands=2,
+                min_detection_confidence=0.5,
+            ) as hands:
+                rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+                result = hands.process(rgb)
 
-            if result.multi_hand_landmarks:
-                for hand_landmarks in result.multi_hand_landmarks:
-                    mp_drawing.draw_landmarks(
-                        frame,
-                        hand_landmarks,
-                        mp_hands.HAND_CONNECTIONS,
-                        mp_drawing.DrawingSpec(color=(0, 255, 0), thickness=2, circle_radius=2),
-                        mp_drawing.DrawingSpec(color=(255, 0, 0), thickness=2)
-                    )
+                if result.multi_hand_landmarks:
+                    for hand_landmarks in result.multi_hand_landmarks:
+                        mp_drawing.draw_landmarks(
+                            frame,
+                            hand_landmarks,
+                            mp_hands.HAND_CONNECTIONS,
+                            mp_drawing.DrawingSpec(color=(0, 255, 0), thickness=2, circle_radius=2),
+                            mp_drawing.DrawingSpec(color=(255, 0, 0), thickness=2)
+                        )
 
         os.makedirs("uploads", exist_ok=True)
         thumbnail_path = f"uploads/thumb_{analysis_id}_step{step_number}.jpg"
