@@ -21,3 +21,6 @@ aims/dist/
 # 기타
 .DS_Store
 *.log
+
+# VLM 전용 가상환경
+.venv-vlm/
