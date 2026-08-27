@@ -17,7 +17,20 @@ os.environ.setdefault("DATABASE_URL", f"sqlite:///{os.path.join(BACKEND, 'aims.d
 sys.path.insert(0, BACKEND)
 
 from database import SessionLocal, engine, Base                         # noqa: E402
-from models import SOP, Step, DetectedTool, Analysis, SOPStatus         # noqa: E402
+from models import SOP, Step, DetectedTool, Analysis, SOPStatus, User, UserRole  # noqa: E402
+
+# 프론트엔드가 사용하는 데모 근로자 ID (worker HomePage의 CURRENT_USER_ID)
+DEMO_WORKER_ID = "user_worker_00"
+
+
+def ensure_demo_worker(db):
+    """fresh clone에도 근로자 화면이 뜨도록 데모 근로자 계정 보장."""
+    if not db.query(User).filter(User.id == DEMO_WORKER_ID).first():
+        db.add(User(
+            id=DEMO_WORKER_ID, username="demo_worker", name="데모 작업자",
+            email="worker@aims.local", role=UserRole.WORKER, language="ko",
+        ))
+        db.flush()
 
 
 def mmss(s):
@@ -109,6 +122,7 @@ def main():
         return
     db = SessionLocal()
     try:
+        ensure_demo_worker(db)
         for path in timelines:
             tl = json.load(open(path, encoding="utf-8"))
             sop_id, n = seed_one(db, tl)

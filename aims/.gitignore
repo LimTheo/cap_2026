@@ -8,7 +8,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-dist
+# dist (데모 배포 위해 커밋)
 dist-ssr
 *.local
 

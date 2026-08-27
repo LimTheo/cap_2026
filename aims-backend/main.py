@@ -48,16 +48,19 @@ app.mount("/uploads", StaticFiles(directory="uploads"), name="uploads")
 if os.path.isdir(FRONTEND_DIST):
     app.mount("/assets", StaticFiles(directory=os.path.join(FRONTEND_DIST, "assets")), name="assets")
 
+    # index.html은 캐시 금지 → 항상 최신 빌드(해시된 JS)를 참조하게 함
+    _NO_CACHE = {"Cache-Control": "no-cache, no-store, must-revalidate"}
+
     @app.get("/")
     async def serve_root():
-        return FileResponse(os.path.join(FRONTEND_DIST, "index.html"))
+        return FileResponse(os.path.join(FRONTEND_DIST, "index.html"), headers=_NO_CACHE)
 
     @app.get("/{full_path:path}")
     async def serve_spa(full_path: str):
         # API 경로는 제외
         if full_path.startswith("api/") or full_path.startswith("uploads/"):
             return {"detail": "Not found"}
-        return FileResponse(os.path.join(FRONTEND_DIST, "index.html"))
+        return FileResponse(os.path.join(FRONTEND_DIST, "index.html"), headers=_NO_CACHE)
 
 @app.get("/health")
 async def health():
