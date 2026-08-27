@@ -73,6 +73,7 @@ async def get_worker_procedures(user_id: str, db: Session = Depends(get_db)):
                 "duration": sop.duration,
                 "confidence": sop.confidence,
                 "step_count": len(sop.steps),
+                "thumbnail_url": (sorted(sop.steps, key=lambda s: s.step_number)[0].thumbnail_url if sop.steps else None),
                 "created_at": sop.created_at.isoformat(),
                 "published_at": sop.published_at.isoformat() if sop.published_at else None,
             }

@@ -5,6 +5,7 @@ import { PlayCircle, CheckCircle2, FileText, Loader, AlertCircle } from 'lucide-
 import { workerAPI } from '../../utils/api';
 
 const CURRENT_USER_ID = 'user_worker_00';
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || '';
 
 export default function HomePage() {
   const { t } = useTranslation();
@@ -79,8 +80,17 @@ export default function HomePage() {
               onClick={() => navigate(`/worker/procedure/${proc.id}`)}
             >
               {/* Thumbnail */}
-              <div className="h-40 bg-card-hover flex items-center justify-center relative">
-                <FileText size={40} className="text-text-muted" />
+              <div className="h-40 bg-card-hover flex items-center justify-center relative overflow-hidden">
+                {proc.thumbnail_url ? (
+                  <img
+                    src={`${BACKEND_URL}${proc.thumbnail_url}`}
+                    alt={proc.task_name}
+                    className="w-full h-full object-cover"
+                    onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                  />
+                ) : (
+                  <FileText size={40} className="text-text-muted" />
+                )}
                 <div className={`absolute top-3 left-3 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-black/60 text-white`}>
                   <PlayCircle size={14} />
                   <span className="text-xs font-medium">{t('worker.home.canStart')}</span>
