@@ -1,0 +1,52 @@
+{
+  "sop_suffix": "coupler",
+  "process_name": "스마트 RC카 조립",
+  "task_name": "소형 결합 부품 조립",
+  "video": "seed/videos/coupler.mp4",
+  "parts": [
+    { "id": "P1", "name": "노란색 장너트 반쪽", "icon": "🟡" },
+    { "id": "P2", "name": "노란색 원통", "icon": "⚪" },
+    { "id": "P3", "name": "T자형 나사", "icon": "🔩" },
+    { "id": "P4", "name": "O형 너트", "icon": "⭕" }
+  ],
+  "tools": [
+    { "id": "T1", "name": "손", "icon": "✋" }
+  ],
+  "segments": [
+    {
+      "step_number": 1, "name": "장너트 반쪽 결합", "start": 0, "end": 9,
+      "description": "노란색 장너트 반쪽 2개를 맞대어 하나로 합친다.",
+      "cautions": ["결합면 방향·정렬 확인"],
+      "hazards": [], "parts": ["P1"], "tools": ["T1"],
+      "evidence": "장너트 반쪽 2개를 맞대어 합치는 장면"
+    },
+    {
+      "step_number": 2, "name": "원통 삽입 후 재결합", "start": 10, "end": 21,
+      "description": "합친 장너트를 분해하여 노란색 원통을 가운데 넣고, 장너트 반쪽 2개를 다시 합친다.",
+      "cautions": ["원통이 중앙에 오도록 정렬", "반쪽이 어긋나지 않게 결합"],
+      "hazards": [], "parts": ["P1", "P2"], "tools": ["T1"],
+      "evidence": "원통을 가운데 넣고 장너트를 다시 합치는 장면"
+    },
+    {
+      "step_number": 3, "name": "결합 상태 확인", "start": 22, "end": 30,
+      "description": "합쳐진 결과물의 결합 상태와 틈새를 확인한다.",
+      "cautions": ["헐거움·틈새 여부 확인"],
+      "hazards": [], "parts": ["P1", "P2"], "tools": ["T1"],
+      "evidence": "합쳐진 부품의 결합 상태를 확인하는 장면"
+    },
+    {
+      "step_number": 4, "name": "T자 나사 삽입", "start": 31, "end": 33,
+      "description": "합쳐진 장너트 오른쪽에 T자형 나사를 끼운다.",
+      "cautions": ["구멍에 수직으로 삽입"],
+      "hazards": [], "parts": ["P3"], "tools": ["T1"],
+      "evidence": "장너트 오른쪽에 T자 나사를 삽입하는 장면"
+    },
+    {
+      "step_number": 5, "name": "O형 너트로 고정", "start": 34, "end": 47,
+      "description": "T자형 나사를 O형 너트로 조여 부품을 최종 고정한다.",
+      "cautions": ["나사산을 맞춰 결합", "끝까지 조여 헐거움 방지"],
+      "hazards": ["작은 부품 낙하·분실 주의"], "parts": ["P3", "P4"], "tools": ["T1"],
+      "evidence": "T자 나사를 O형 너트로 조여 고정하는 장면"
+    }
+  ]
+}
