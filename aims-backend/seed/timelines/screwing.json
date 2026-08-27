@@ -1,0 +1,109 @@
+{
+  "sop_suffix": "screwing",
+  "process_name": "스마트 RC카 조립",
+  "task_name": "상판 나사 고정",
+  "video": "seed/videos/screwing.mp4",
+  "parts": [
+    { "id": "P1", "name": "조립된 하판 (모터·바퀴)", "icon": "🔲" },
+    { "id": "P2", "name": "아크릴 상판", "icon": "🔳" },
+    { "id": "P3", "name": "T자형 나사", "icon": "🔩" },
+    { "id": "P4", "name": "O형 너트", "icon": "⭕" },
+    { "id": "P5", "name": "바퀴", "icon": "⚫" }
+  ],
+  "tools": [
+    { "id": "T1", "name": "손", "icon": "✋" }
+  ],
+  "segments": [
+    {
+      "step_number": 1, "name": "상판 올리기 (왼쪽 위 T자 나사)", "start": 0, "end": 15,
+      "description": "빈 아크릴판 왼쪽 위에 T자형 나사를 끼운 뒤, 모터·바퀴가 장착된 하판 위에 상판을 올린다.",
+      "cautions": ["상·하판 구멍 위치 정렬", "모터 배선 눌림 주의"],
+      "hazards": ["작은 부품 낙하·분실 주의"], "parts": ["P1", "P2", "P3"], "tools": ["T1"],
+      "evidence": "왼쪽 위 T자 나사를 끼운 상판을 하판 위에 올리는 장면"
+    },
+    {
+      "step_number": 2, "name": "뒤집어 O형 너트 고정 (1차)", "start": 16, "end": 40,
+      "description": "장착한 상판을 뒤집어 왼쪽 위 T자형 나사를 O형 너트로 조여 고정한다.",
+      "cautions": ["나사산을 맞춰 결합", "과조임으로 아크릴 균열 주의"],
+      "hazards": ["작은 부품 낙하·분실 주의"], "parts": ["P3", "P4"], "tools": ["T1"],
+      "evidence": "판을 뒤집어 T자 나사를 O형 너트로 조이는 장면"
+    },
+    {
+      "step_number": 3, "name": "판 다시 뒤집기", "start": 41, "end": 45,
+      "description": "다음 나사 작업을 위해 아크릴판을 다시 뒤집는다.",
+      "cautions": ["이미 조인 나사 눌림 주의"],
+      "hazards": [], "parts": ["P1", "P2"], "tools": ["T1"],
+      "evidence": "아크릴판을 다시 뒤집는 장면"
+    },
+    {
+      "step_number": 4, "name": "왼쪽 아래 T자 나사 삽입", "start": 46, "end": 54,
+      "description": "아크릴판 왼쪽 아래 구멍에 T자형 나사를 끼운다.",
+      "cautions": ["구멍에 수직으로 삽입"],
+      "hazards": [], "parts": ["P3"], "tools": ["T1"],
+      "evidence": "왼쪽 아래에 T자 나사를 삽입하는 장면"
+    },
+    {
+      "step_number": 5, "name": "뒤집어 O형 너트 고정 (2차)", "start": 55, "end": 72,
+      "description": "판을 뒤집어 왼쪽 아래 T자형 나사를 O형 너트로 조여 고정한다.",
+      "cautions": ["나사산을 맞춰 결합", "끝까지 조여 헐거움 방지"],
+      "hazards": ["작은 부품 낙하·분실 주의"], "parts": ["P3", "P4"], "tools": ["T1"],
+      "evidence": "판을 뒤집어 왼쪽 아래 나사를 O형 너트로 고정하는 장면"
+    },
+    {
+      "step_number": 6, "name": "1차 너트 재점검", "start": 73, "end": 76,
+      "description": "처음 고정한 O형 너트를 한 번 더 확인하고 다시 조여본다.",
+      "cautions": ["헐거움 여부 확인"],
+      "hazards": [], "parts": ["P4"], "tools": ["T1"],
+      "evidence": "처음 조인 너트를 재점검하는 장면"
+    },
+    {
+      "step_number": 7, "name": "판 다시 뒤집기", "start": 77, "end": 80,
+      "description": "다음 나사 작업을 위해 아크릴판을 다시 뒤집는다.",
+      "cautions": ["이미 조인 나사 눌림 주의"],
+      "hazards": [], "parts": ["P1", "P2"], "tools": ["T1"],
+      "evidence": "아크릴판을 다시 뒤집는 장면"
+    },
+    {
+      "step_number": 8, "name": "왼쪽 위 T자 나사 삽입", "start": 81, "end": 87,
+      "description": "아크릴판 왼쪽 위 구멍에 T자형 나사를 끼운다.",
+      "cautions": ["구멍에 수직으로 삽입"],
+      "hazards": [], "parts": ["P3"], "tools": ["T1"],
+      "evidence": "왼쪽 위에 T자 나사를 삽입하는 장면"
+    },
+    {
+      "step_number": 9, "name": "오른쪽 위 T자 나사 삽입", "start": 88, "end": 97,
+      "description": "아크릴판 오른쪽 위 구멍에 T자형 나사를 끼운다.",
+      "cautions": ["구멍에 수직으로 삽입"],
+      "hazards": [], "parts": ["P3"], "tools": ["T1"],
+      "evidence": "오른쪽 위에 T자 나사를 삽입하는 장면"
+    },
+    {
+      "step_number": 10, "name": "뒤집어 왼쪽 아래 O형 너트 고정", "start": 98, "end": 140,
+      "description": "판을 뒤집어 왼쪽 아래 T자형 나사를 O형 너트로 조여 고정한다.",
+      "cautions": ["나사산을 맞춰 결합", "과조임 주의"],
+      "hazards": ["작은 부품 낙하·분실 주의"], "parts": ["P3", "P4"], "tools": ["T1"],
+      "evidence": "판을 뒤집어 왼쪽 아래 나사를 O형 너트로 고정하는 장면"
+    },
+    {
+      "step_number": 11, "name": "오른쪽 아래 O형 너트 고정", "start": 141, "end": 167,
+      "description": "오른쪽 아래 T자형 나사를 O형 너트로 조여 고정한다.",
+      "cautions": ["나사산을 맞춰 결합", "끝까지 조여 헐거움 방지"],
+      "hazards": ["작은 부품 낙하·분실 주의"], "parts": ["P3", "P4"], "tools": ["T1"],
+      "evidence": "오른쪽 아래 나사를 O형 너트로 고정하는 장면"
+    },
+    {
+      "step_number": 12, "name": "판 다시 뒤집기", "start": 168, "end": 170,
+      "description": "마무리 확인을 위해 아크릴판을 다시 뒤집는다.",
+      "cautions": ["조인 나사 눌림 주의"],
+      "hazards": [], "parts": ["P1", "P2"], "tools": ["T1"],
+      "evidence": "아크릴판을 다시 뒤집는 장면"
+    },
+    {
+      "step_number": 13, "name": "떨어진 바퀴 장착 및 마무리", "start": 171, "end": 179,
+      "description": "왼쪽 위에서 빠진 바퀴를 다시 장착하고 완성 상태를 확인한다.",
+      "cautions": ["바퀴 축까지 끝까지 압입", "전체 나사 고정 재확인"],
+      "hazards": ["압입 시 손가락 끼임 주의"], "parts": ["P5"], "tools": ["T1"],
+      "evidence": "빠진 바퀴를 다시 끼우고 마무리하는 장면"
+    }
+  ]
+}
