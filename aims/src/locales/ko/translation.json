@@ -127,7 +127,7 @@
       "taskName": "작업명",
       "transcript": "음성 전사",
       "steps": "단계 ({{count}})",
-      "detectedTools": "감지된 공구 ({{count}})",
+      "detectedTools": "감지된 부품·공구 ({{count}})",
       "publish": "게시",
       "confirmPublish": "이 절차를 게시하시겠습니까?",
       "confirmDelete": "이 절차를 삭제하시겠습니까?",
@@ -259,7 +259,7 @@
     "procedureView": {
       "startWork": "작업 수행",
       "steps": "작업 단계",
-      "detectedTools": "감지된 공구",
+      "detectedTools": "감지된 부품·공구",
       "transcript": "음성 전사",
       "language": "언어",
       "confidence": "신뢰도: {{value}}%",

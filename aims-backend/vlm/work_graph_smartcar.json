@@ -4,26 +4,53 @@
   "description": "노란색 기어모터 4개가 사전 장착된 흰색 아크릴 섀시판에 바퀴 4개를 끼워 4륜 차체를 완성하는 표준 작업 절차",
   "version": "draft-2",
   "note": "WIN_20260819_12_37_55_Pro.mp4 기준. 모터는 시작부터 섀시에 장착되어 있고, 작업은 바퀴 결합만 수행.",
-
   "parts": [
-    { "id": "P1", "name": "모터 4개가 장착된 흰색 아크릴 섀시", "qty": 1 },
-    { "id": "P2", "name": "바퀴 (고무 타이어 + 노란 휠)", "qty": 4 }
+    {
+      "id": "P1",
+      "name": "아크릴 섀시판",
+      "icon": "🔲",
+      "qty": 1
+    },
+    {
+      "id": "P2",
+      "name": "노란색 기어모터",
+      "icon": "⚙️",
+      "qty": 4
+    },
+    {
+      "id": "P3",
+      "name": "바퀴",
+      "icon": "⚫",
+      "qty": 4
+    }
   ],
-
   "tools": [
-    { "id": "T1", "name": "손 (압입)" }
+    {
+      "id": "T1",
+      "name": "손 (압입)",
+      "icon": "✋"
+    }
   ],
-
   "nodes": [
     {
       "id": "S1",
       "order": 1,
       "name": "부품 준비 및 확인",
       "description": "모터 4개가 장착된 섀시와 바퀴 4개를 작업대에 배치하고 수량을 확인한다.",
-      "required_parts": ["P1", "P2"],
+      "required_parts": [
+        "P1",
+        "P2",
+        "P3"
+      ],
       "required_tools": [],
-      "key_actions": ["섀시와 바퀴 배치", "바퀴 4개 수량 확인"],
-      "cautions": ["바퀴 4개 준비 여부 확인", "모터 축 이물질 확인"],
+      "key_actions": [
+        "섀시와 바퀴 배치",
+        "바퀴 4개 수량 확인"
+      ],
+      "cautions": [
+        "바퀴 4개 준비 여부 확인",
+        "모터 축 이물질 확인"
+      ],
       "hazards": [],
       "expected_segment_hint": "영상 도입부, 섀시와 바퀴 4개가 놓여 있음"
     },
@@ -32,11 +59,26 @@
       "order": 2,
       "name": "바퀴를 모터 축에 결합",
       "description": "각 기어모터의 출력 축에 바퀴를 수직으로 눌러 끼운다. (4개 반복)",
-      "required_parts": ["P1", "P2"],
-      "required_tools": ["T1"],
-      "key_actions": ["모터 축과 바퀴 구멍 정렬", "수직으로 압입", "4개 바퀴 반복 결합"],
-      "cautions": ["축에 수직으로 끼울 것(비스듬히 끼우면 축 손상)", "끝까지 밀어 넣어 헐거움 방지"],
-      "hazards": ["압입 시 손가락 끼임 주의"],
+      "required_parts": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "required_tools": [
+        "T1"
+      ],
+      "key_actions": [
+        "모터 축과 바퀴 구멍 정렬",
+        "수직으로 압입",
+        "4개 바퀴 반복 결합"
+      ],
+      "cautions": [
+        "축에 수직으로 끼울 것(비스듬히 끼우면 축 손상)",
+        "끝까지 밀어 넣어 헐거움 방지"
+      ],
+      "hazards": [
+        "압입 시 손가락 끼임 주의"
+      ],
       "expected_segment_hint": "손으로 바퀴를 잡고 노란 모터 축에 눌러 끼우는 동작 반복"
     },
     {
@@ -44,17 +86,36 @@
       "order": 3,
       "name": "완성 상태 점검",
       "description": "바퀴 4개의 고정과 정렬 상태를 확인하고 차체를 들어 흔들림을 점검한다.",
-      "required_parts": ["P1", "P2"],
+      "required_parts": [
+        "P1",
+        "P2",
+        "P3"
+      ],
       "required_tools": [],
-      "key_actions": ["바퀴 헐거움 점검", "좌우 정렬 확인", "완성 차체 확인"],
-      "cautions": ["헐거운 바퀴는 다시 끝까지 압입"],
+      "key_actions": [
+        "바퀴 헐거움 점검",
+        "좌우 정렬 확인",
+        "완성 차체 확인"
+      ],
+      "cautions": [
+        "헐거운 바퀴는 다시 끝까지 압입"
+      ],
       "hazards": [],
       "expected_segment_hint": "완성된 4륜 차체를 손으로 들고 확인"
     }
   ],
-
   "edges": [
-    { "from": "S1", "to": "S2", "type": "precedence", "condition": "부품 확인 완료" },
-    { "from": "S2", "to": "S3", "type": "precedence", "condition": "바퀴 4개 결합 완료" }
+    {
+      "from": "S1",
+      "to": "S2",
+      "type": "precedence",
+      "condition": "부품 확인 완료"
+    },
+    {
+      "from": "S2",
+      "to": "S3",
+      "type": "precedence",
+      "condition": "바퀴 4개 결합 완료"
+    }
   ]
 }

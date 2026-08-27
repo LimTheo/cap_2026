@@ -143,7 +143,10 @@ def main():
         db.add(sop)
         db.flush()
 
-        tool_steps = {}  # tool_name -> {icon, steps:[]}
+        # 감지 항목(부품 + 공구) id -> {name, icon}
+        item_meta = {x["id"]: {"name": x["name"], "icon": x.get("icon", "🔧")}
+                     for x in graph.get("parts", []) + graph.get("tools", [])}
+        item_steps = {}  # id -> steps[]
         for i, (node, t_start, reason) in enumerate(observed):
             t_end = observed[i + 1][1] if i + 1 < len(observed) else duration
             # 단계 시작 프레임 썸네일
@@ -176,17 +179,18 @@ def main():
                 confidence=90,
                 thumbnail_url=thumb_url,
             ))
-            # 공구 집계
-            for tid in node.get("required_tools", []):
-                tname = next((tt["name"] for tt in graph["tools"] if tt["id"] == tid), tid)
-                tool_steps.setdefault(tname, []).append(node["order"])
+            # 부품 + 공구를 감지 항목으로 집계
+            for iid in node.get("required_parts", []) + node.get("required_tools", []):
+                if iid in item_meta:
+                    item_steps.setdefault(iid, []).append(node["order"])
 
-        for tname, steps_involved in tool_steps.items():
+        for iid, steps_involved in item_steps.items():
+            meta = item_meta[iid]
             db.add(DetectedTool(
-                id=f"tool_{analysis_id}_{tname}",
+                id=f"item_{analysis_id}_{iid}",
                 sop_id=sop_id,
-                name=tname,
-                icon="🔧",
+                name=meta["name"],
+                icon=meta["icon"],
                 confidence=95,
                 steps_involved=sorted(set(steps_involved)),
             ))

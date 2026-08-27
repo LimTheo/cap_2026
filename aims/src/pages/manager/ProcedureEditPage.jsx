@@ -207,9 +207,6 @@ export default function ProcedureEditPage() {
       {/* Basic Info */}
       <div className="bg-card rounded-xl border border-border p-5 space-y-4">
         <h3 className="font-semibold text-text-primary">{t('manager.procedureEdit.basicInfo')}</h3>
-        <div className="text-xs bg-primary p-2 rounded border border-border text-text-secondary">
-          DEBUG: formData.process_name = "{formData.process_name}" | formData.task_name = "{formData.task_name}"
-        </div>
         {canEdit ? (
           <>
             <div>
@@ -265,19 +262,24 @@ export default function ProcedureEditPage() {
         <h3 className="font-semibold text-text-primary">{t('manager.procedureEdit.steps', { count: sop.steps?.length || 0 })}</h3>
         <div className="space-y-2">
           {sop.steps && sop.steps.map((step) => (
-            <div key={step.step_number} className="p-3 bg-primary rounded-lg flex items-center justify-between gap-3">
+            <div key={step.step_number} className="p-3 bg-primary rounded-lg flex gap-3">
               {step.thumbnail_url && (
                 <img
                   src={`${BACKEND_URL}${step.thumbnail_url}`}
                   alt={`Step ${step.step_number}`}
-                  className="w-16 h-16 rounded object-cover"
+                  className="w-16 h-16 rounded object-cover flex-shrink-0"
                 />
               )}
-              <div className="flex-1">
+              <div className="flex-1 min-w-0">
                 <p className="font-medium text-text-primary">단계 {step.step_number}: {step.name}</p>
-                <p className="text-xs text-text-secondary">
+                <p className="text-xs text-text-secondary mb-1.5">
                   {step.time_start}초 ~ {step.time_end}초 (신뢰도: {step.confidence}%)
                 </p>
+                {step.description && (
+                  <p className="text-sm text-text-secondary whitespace-pre-line leading-relaxed">
+                    {step.description}
+                  </p>
+                )}
               </div>
             </div>
           ))}
@@ -286,7 +288,7 @@ export default function ProcedureEditPage() {
 
       {/* Tools */}
       <div className="bg-card rounded-xl border border-border p-5 space-y-3">
-        <h3 className="font-semibold text-text-primary">감지된 공구 ({sop.detected_tools?.length || 0})</h3>
+        <h3 className="font-semibold text-text-primary">감지된 부품·공구 ({sop.detected_tools?.length || 0})</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
           {sop.detected_tools && sop.detected_tools.map((tool) => (
             <div key={tool.name} className="p-3 bg-primary rounded-lg flex items-center justify-between">
