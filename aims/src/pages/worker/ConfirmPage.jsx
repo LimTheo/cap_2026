@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { CheckCircle, Loader, AlertCircle, ArrowLeft, Send } from 'lucide-react';
 import { procedureAPI, workerAPI } from '../../utils/api';
 
-const CURRENT_USER_ID = 'user_001';
+const CURRENT_USER_ID = 'user_worker_00';
 const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || '';
 
 export default function ConfirmPage() {
