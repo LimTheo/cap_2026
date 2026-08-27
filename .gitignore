@@ -24,3 +24,12 @@ aims/dist/
 
 # VLM 전용 가상환경
 .venv-vlm/
+
+# 대용량 원본 영상 (깃허브 제외)
+drive-download-*/
+
+# VLM 임시/조사 프레임
+aims-backend/vlm/_survey/
+
+# DB 백업
+*.db.bak.*
