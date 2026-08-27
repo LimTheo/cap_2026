@@ -108,7 +108,6 @@ export default function ProcedureViewPage() {
         </div>
         <div className="flex flex-wrap items-center gap-4 mb-5 text-sm text-text-secondary">
           <span>⏱️ {sop.duration}</span>
-          <span>⭐ {t('worker.procedureView.confidence', { value: sop.confidence })}</span>
           <span>📍 {t('worker.procedureView.stepsCount', { count: sop.steps?.length || 0 })}</span>
         </div>
         <button
@@ -211,7 +210,6 @@ export default function ProcedureViewPage() {
                   <span className="text-2xl">{tool.icon}</span>
                   <div>
                     <p className="font-medium text-text-primary">{tool.name}</p>
-                    <p className="text-xs text-text-muted">{t('worker.procedureView.confidence', { value: tool.confidence })}</p>
                   </div>
                 </div>
                 <p className="text-xs text-text-secondary">

@@ -103,7 +103,6 @@ export default function PublishPage() {
                     <th className="text-left px-5 py-3 text-xs font-medium text-text-muted uppercase">작업명</th>
                     <th className="text-left px-5 py-3 text-xs font-medium text-text-muted uppercase">공정</th>
                     <th className="text-center px-5 py-3 text-xs font-medium text-text-muted uppercase">단계 수</th>
-                    <th className="text-center px-5 py-3 text-xs font-medium text-text-muted uppercase">신뢰도</th>
                     <th className="text-center px-5 py-3 text-xs font-medium text-text-muted uppercase">액션</th>
                   </tr>
                 </thead>
@@ -113,7 +112,6 @@ export default function PublishPage() {
                       <td className="px-5 py-4 text-sm text-text-primary font-medium">{proc.task_name}</td>
                       <td className="px-5 py-4 text-sm text-text-secondary">{proc.process_name}</td>
                       <td className="px-5 py-4 text-sm text-text-secondary text-center">{proc.step_count}</td>
-                      <td className="px-5 py-4 text-sm text-text-secondary text-center">{proc.confidence}%</td>
                       <td className="px-5 py-4">
                         <div className="flex items-center justify-center gap-2">
                           <button
@@ -158,7 +156,6 @@ export default function PublishPage() {
                     <th className="text-left px-5 py-3 text-xs font-medium text-text-muted uppercase">작업명</th>
                     <th className="text-left px-5 py-3 text-xs font-medium text-text-muted uppercase">공정</th>
                     <th className="text-center px-5 py-3 text-xs font-medium text-text-muted uppercase">단계 수</th>
-                    <th className="text-center px-5 py-3 text-xs font-medium text-text-muted uppercase">신뢰도</th>
                     <th className="text-left px-5 py-3 text-xs font-medium text-text-muted uppercase">게시일</th>
                     <th className="text-center px-5 py-3 text-xs font-medium text-text-muted uppercase">액션</th>
                   </tr>
@@ -169,7 +166,6 @@ export default function PublishPage() {
                       <td className="px-5 py-4 text-sm text-text-primary font-medium">{proc.task_name}</td>
                       <td className="px-5 py-4 text-sm text-text-secondary">{proc.process_name}</td>
                       <td className="px-5 py-4 text-sm text-text-secondary text-center">{proc.step_count}</td>
-                      <td className="px-5 py-4 text-sm text-text-secondary text-center">{proc.confidence}%</td>
                       <td className="px-5 py-4 text-sm text-text-secondary">
                         {new Date(proc.published_at).toLocaleDateString('ko-KR')}
                       </td>

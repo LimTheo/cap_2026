@@ -64,7 +64,6 @@ function RecentActivityCard({ proc, statusConfig, navigate, t }) {
         </p>
         <div className="flex items-center justify-between text-xs text-text-muted mt-2">
           <span>{proc.step_count || 0}단계</span>
-          <span>{proc.confidence || 0}% 신뢰도</span>
         </div>
       </div>
     </div>

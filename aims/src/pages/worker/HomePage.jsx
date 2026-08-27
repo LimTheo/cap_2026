@@ -115,7 +115,6 @@ export default function HomePage() {
                 <div className="flex items-center justify-between text-xs text-text-muted">
                   <div className="flex gap-4">
                     <span>⏱️ {proc.duration}</span>
-                    <span>⭐ {t('worker.home.confidence', { value: proc.confidence })}</span>
                   </div>
                 </div>
 

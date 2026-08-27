@@ -146,7 +146,7 @@ export default function ProcedureEditPage() {
             <p className="text-sm text-text-secondary">{sop.process_name}</p>
             {sop.duration && (
               <p className="text-xs text-text-muted mt-1">
-                📹 {sop.duration} | 신뢰도 {sop.confidence}%
+                📹 {sop.duration}
               </p>
             )}
           </div>
@@ -273,7 +273,7 @@ export default function ProcedureEditPage() {
               <div className="flex-1 min-w-0">
                 <p className="font-medium text-text-primary">단계 {step.step_number}: {step.name}</p>
                 <p className="text-xs text-text-secondary mb-1.5">
-                  {Math.round(step.time_start)}초 ~ {Math.round(step.time_end)}초 (신뢰도: {step.confidence}%)
+                  {Math.round(step.time_start)}초 ~ {Math.round(step.time_end)}초
                 </p>
                 {step.description && (
                   <p className="text-sm text-text-secondary whitespace-pre-line leading-relaxed">
@@ -295,7 +295,7 @@ export default function ProcedureEditPage() {
               <div>
                 <p className="font-medium text-text-primary">{tool.icon} {tool.name}</p>
                 <p className="text-xs text-text-secondary">
-                  단계: {tool.steps_involved?.join(', ')} | 신뢰도: {tool.confidence}%
+                  단계: {tool.steps_involved?.join(', ')}
                 </p>
               </div>
               {tool.preview_url && (

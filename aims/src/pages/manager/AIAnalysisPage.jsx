@@ -152,21 +152,6 @@ export default function AIAnalysisPage() {
             </div>
           </div>
 
-          {/* Confidence */}
-          <div className="bg-card rounded-xl border border-border p-4">
-            <div className="flex items-center justify-between">
-              <p className="text-sm text-text-secondary">AI 분석 신뢰도</p>
-              <span className="text-lg font-bold text-success">
-                {analysisResult.confidence}%
-              </span>
-            </div>
-            <div className="h-2 bg-primary rounded-full overflow-hidden mt-2">
-              <div
-                className="h-full bg-success rounded-full"
-                style={{ width: `${analysisResult.confidence}%` }}
-              />
-            </div>
-          </div>
         </div>
 
         {/* Right: Analysis Panel */}
@@ -259,9 +244,6 @@ export default function AIAnalysisPage() {
                         </p>
                         <p className="text-xs text-text-muted">{step.timeRange}</p>
                       </div>
-                      <span className="text-xs text-text-muted">
-                        {step.confidence}%
-                      </span>
                     </div>
                     {/* Thumbnail image or placeholder */}
                     {step.thumbnailUrl ? (
@@ -302,11 +284,6 @@ export default function AIAnalysisPage() {
                             사용 단계: {tool.steps.map((s) => `Step ${s}`).join(', ')}
                           </p>
                         </div>
-                        {typeof tool.confidence === 'number' && (
-                          <span className="text-xs font-medium text-success">
-                            {tool.confidence}%
-                          </span>
-                        )}
                       </div>
                       {/* Tool preview image */}
                       {tool.previewUrl && (

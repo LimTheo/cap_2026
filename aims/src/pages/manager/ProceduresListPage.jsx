@@ -162,7 +162,6 @@ function ProcedureCard({ proc, cfg, navigate, t }) {
         <p className="text-xs text-text-muted mb-2">{proc.process_name}</p>
         <div className="flex items-center justify-between text-xs text-text-muted">
           <span>{t('manager.proceduresList.stepCount', { count: proc.step_count })}</span>
-          <span>{t('manager.proceduresList.confidence', { value: proc.confidence })}</span>
         </div>
         {proc.duration && (
           <div className="text-xs text-text-muted mt-2">
